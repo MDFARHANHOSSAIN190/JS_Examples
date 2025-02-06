@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="js_examples">
+<meta name="description" content="lorem">
+<meta name="keywords" content="html,css,bootstrap,js">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="3 days">
+<meta name="author" content="MD FARHAN HOSSAIN">
+
+
+  <title>JS Examples</title>
+  <!-- font links -->
+ <link rel="icon" type="image/png" href="img/js_icon.png">
+  <!-- css links -->
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+	
+
+  <h1>JS Examples</h1>
+
+
+<h2>Click te buttons to off on bulb</h2>
+    <button type="button" onclick="bulbOn()" class="btn btn-dark">Bulb On</button>
+    <img src="images/off.gif" id="image" alt="">
+    <button type="button" onclick="bulbOff()" class="btn btn-dark">Bulb Off</button>
+<hr>
+
+  <h2> Change Picture on Button Click</h2>
+  <button onclick="changeImage()">Click me to change the picture</button>
+  <img id="image1" src="img/image1.jpg" alt="Image" width="300" height="200">
+<hr>
+  <h2>Display Current Time</h2>
+  <p id="currentTime"></p>
+<hr>
+  <h2>Toggle Text on Button Click</h2>
+  <button onclick="toggleText()">Toggle Text</button>
+  <p id="toggleText">Hello, World!</p>
+<hr>
+  <h2>Change Background Color on Button Click</h2>
+  <button onclick="changeColor()">Change Background Color</button>
+<hr>
+  <h2>Show/Hide an Element</h2>
+  <button onclick="toggleElement()">Show/Hide Text</button>
+  <p id="toggleElement" style="display:none">This is some text.</p>
+<hr>
+  <h2>Update Text on Button Click</h2>
+  <button onclick="updateText()">Click to Update Text</button>
+  <p id="updateText">Original Text</p>
+<hr>
+  <h2> Calculate and Display Sum</h2>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+  <button onclick="calculateSum()">Calculate Sum</button>
+  <p id="sumResult"></p>
+<hr>
+  <h2>Change Text Color on Mouse Over</h2>
+  <p id="mouseoverText" onmouseover="changeTextColor()" onmouseout="resetTextColor()">Hover over this text to change its color.</p>
+<hr>
+  <h2>Alert Box on Button Click</h2>
+  <button onclick="showAlert()">Click me</button>
+<hr>
+  <h2>Display Random Number</h2>
+  <button onclick="displayRandomNumber()">Generate Random Number</button>
+  <p id="randomNumber"></p>
+<hr>
+  <h2>Change Text Content on Double Click</h2>
+  <p id="dblclickText" ondblclick="changeText()">Double-click this text to change it.</p>
+  <hr>
+
+  <h2>Count Button Clicks</h2>
+  <button onclick="countClicks()">Click me</button>
+  <p id="clickCount">Clicks: 0</p>
+<hr>
+  <h2>Display Length of Text Input</h2>
+  <input type="text" id="textInput" onkeyup="displayLength()">
+  <p id="textLength">Length: 0</p>
+<hr>
+  <h2>Convert Temperature from Celsius to Fahrenheit</h2>
+  <input type="number" id="celsius" placeholder="Enter Celsius">
+  <button onclick="convertTemperature()">Convert to Fahrenheit</button>
+  <p id="fahrenheit"></p>
+<hr>
+  <h2>Reverse a String</h2>
+  <input type="text" id="stringInput" placeholder="Enter a string">
+  <button onclick="reverseString()">Reverse String</button>
+  <p id="reversedString"></p>
+<hr>
+  <h2>Calculate Factorial of a Number</h2>
+  <input type="number" id="factorialInput" placeholder="Enter a number">
+  <button onclick="calculateFactorial()">Calculate Factorial</button>
+  <p id="factorialResult"></p>
+<hr>
+  <h2>Change Font Size on Button Click</h2>
+  <button onclick="changeFontSize()">Change Font Size</button>
+  <p id="fontText">This text will change size.</p>
+<hr>
+  <h2>Validate Email Format</h2>
+  <input type="text" id="emailInput" placeholder="Enter your email">
+  <button onclick="validateEmail()">Validate Email</button>
+  <p id="emailResult"></p>
+<hr>
+  <h2> Change Text on Key Press</h2>
+  <input type="text" id="keyInput" onkeyup="displayKey()">
+  <p id="keyOutput">Press any key...</p>
+<hr>
+  <h2>Count Words in Text Area</h2>
+  <textarea id="textArea" onkeyup="countWords()" rows="4" cols="50" placeholder="Type some text..."></textarea>
+  <p id="wordCount">
+<hr>
+  <h2>Display Current Date</h2>
+  <button onclick="displayDate()">Show Current Date</button>
+  <p id="currentDate"></p>
+<hr>
+  <h2>Disable Button After Click</h2>
+  <button id="disableButton" onclick="disableButton()">Click to Disable</button>
+<hr>
+  <h2>Display User's Age</h2>
+  <input type="number" id="birthYear" placeholder="Enter your birth year">
+  <button onclick="displayAge()">Display Age</button>
+  <p id="ageDisplay"></p>
+<hr>
+  <h2>Change Background Color on Mouse Over</h2>
+  <p id="mouseOverText" onmouseover="changeBackgroundColor()" onmouseout="resetBackgroundColor()">Hover over this text to change background color.</p>
+<hr>
+  <h2>Display Current Month</h2>
+  <button onclick="displayMonth()">Show Current Month</button>
+  <p id="currentMonth"></p>
+<hr>
+  <h2>Calculate Square of a Number</h2>
+  <input type="number" id="squareInput" placeholder="Enter a number">
+  <button onclick="calculateSquare()">Calculate Square</button>
+  <p id="squareResult"></p>
+<hr>
+  <h2>Greet User Based on Time of Day</h2>
+  <button onclick="greetUser()">Greet Me</button>
+  <p id="greeting"></p>
+<hr>
+  <h2>Display Random Quote</h2>
+  <button onclick="displayQuote()">Show Random Quote</button>
+  <p id="randomQuote"></p>
+<hr>
+
+  <h2> Change Background Color Based on Time of Day</h2>
+  <p>The background color changes based on the time of day.</p>
+<hr>
+  <h2>Check if a Number is Even or Odd</h2>
+  <input type="number" id="numberInput" placeholder="Enter a number">
+  <button onclick="checkEvenOdd()">Check Even or Odd</button>
+  <p id="evenOddResult"></p>
+<hr>
+
+  <h2>Convert Text to Uppercase</h2>
+  <input type="text" id="uppercaseInput" placeholder="Enter text">
+  <button onclick="convertToUppercase()">Convert to Uppercase</button>
+  <p id="uppercaseResult"></p>
+<hr>
+  <h2>Convert Text to Lowercase</h2>
+  <input type="text" id="lowercaseInput" placeholder="Enter text">
+  <button onclick="convertToLowercase()">Convert to Lowercase</button>
+  <p id="lowercaseResult"></p>
+<hr>
+  <h2>Calculate Area of a Circle</h2>
+  <input type="number" id="radiusInput" placeholder="Enter radius">
+  <button onclick="calculateCircleArea()">Calculate Area</button>
+  <p id="circleArea"></p>
+<hr>
+  <h2>Change Text Color on Button Click</h2>
+  <button onclick="changeTextColor()">Change Text Color</button>
+  <p id="colorText">This text will change color.</p>
+<hr>
+  <h2>Display Alert on Form Submission</h2>
+  <form onsubmit="displayFormAlert(event)">
+    <input type="text" id="formInput" placeholder="Enter text">
+    <button type="submit">Submit</button>
+  </form>
+  <hr>
+
+
+  <h2>Change Font Style on Button Click</h2>
+  <button onclick="changeFontStyle()">Change Font Style</button>
+  <p id="fontStyleText">This text will change font style.</p>
+<hr>
+  <h2>Toggle Background Color</h2>
+  <button onclick="toggleBackgroundColor()">Toggle Background Color</button>
+<hr>
+  <h2> Show Alert with Input Value</h2>
+  <input type="text" id="alertInput" placeholder="Enter something">
+  <button onclick="showAlertWithInput()">Show Alert</button>
+<hr>
+  <h2>Calculate and Display Square Root</h2>
+  <input type="number" id="sqrtInput" placeholder="Enter a number">
+  <button onclick="calculateSqrt()">Calculate Square Root</button>
+  <p id="sqrtResult"></p>
+<hr>
+  <h2>Change Text Alignment</h2>
+  <button onclick="changeTextAlignment()">Change Text Alignment</button>
+  <p id="alignmentText">This text will change alignment.</p>
+<hr>
+  <h2>Highlight Text on Button Click</h2>
+  <button onclick="highlightText()">Highlight Text</button>
+  <p id="highlightedText">This text will be highlighted.</p>
+<hr>
+  <h2>Display Current Day of the Week</h2>
+  <button onclick="displayDay()">Show Current Day</button>
+  <p id="currentDay"></p>
+<hr>
+  <h2>Display Countdown Timer</h2>
+  <input type="number" id="countdownInput" placeholder="Enter seconds">
+  <button onclick="startCountdown()">Start Countdown</button>
+  <p id="countdownTimer"></p>
+<hr>
+ 
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
